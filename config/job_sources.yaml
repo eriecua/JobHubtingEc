@@ -1,0 +1,35 @@
+source_types:
+  - CSV
+  - LOCAL_FOLDER
+  - EML_FILE
+  - AUTHORIZED_EMAIL
+  - RSS_ATOM
+  - PUBLIC_JSON_API
+  - QUICK_LINK
+capture_statuses:
+  - Creado
+  - Ejecutando
+  - Completado
+  - Completado con errores
+  - Fallido
+  - Omitido
+item_statuses:
+  - Staged
+  - Duplicado
+  - Error
+  - Omitido
+allowed_local_folder_extensions:
+  - .csv
+  - .json
+  - .eml
+remote_limits:
+  timeout_seconds: 10
+  max_response_bytes: 1048576
+  max_records: 50
+  max_pages: 3
+quick_link_defaults:
+  source: Enlace manual
+  company_placeholder: Empresa por completar
+  title_placeholder: Cargo por completar
+local_folder_defaults:
+  allow_reprocess: false

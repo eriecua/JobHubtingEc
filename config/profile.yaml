@@ -1,0 +1,14 @@
+# Example profile for Phase 1. Replace these values with the real profile later.
+profile_status: example
+name: "Usuario de ejemplo"
+target_roles:
+  - "Coordinador de Produccion"
+  - "Supervisor de Produccion"
+skills:
+  - "Lean Manufacturing"
+  - "Excel"
+  - "Indicadores de produccion"
+experience_summary: "Estudiante avanzado de Ingenieria Industrial con experiencia operativa."
+preferences:
+  country: "Ecuador"
+  currency: "USD"

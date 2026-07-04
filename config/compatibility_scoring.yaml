@@ -1,0 +1,128 @@
+scoring_version: "phase4.0"
+weights:
+  skills: 25
+  experience: 15
+  target_role: 15
+  growth: 10
+  salary: 10
+  location_modality: 10
+  company_sector: 10
+  recency: 5
+missing_data_policy:
+  skills:
+    neutral_score: 0.45
+    confidence: 0.20
+  experience:
+    neutral_score: 0.50
+    confidence: 0.35
+  salary:
+    neutral_score: 0.50
+    confidence: 0.20
+  location:
+    neutral_score: 0.50
+    confidence: 0.30
+  sector:
+    neutral_score: 0.50
+    confidence: 0.30
+  recency:
+    neutral_score: 0.50
+    confidence: 0.30
+required_markers:
+  - obligatorio
+  - indispensable
+  - requisito excluyente
+  - requerido
+  - debe tener
+  - must have
+  - imprescindible
+  - minimo
+  - se requiere
+desired_markers:
+  - deseable
+  - preferible
+  - valorado
+  - constituye una ventaja
+  - plus
+  - nice to have
+  - idealmente
+known_certifications:
+  - iso 9001
+  - iso 14001
+  - iso 45001
+  - six sigma yellow belt
+  - six sigma green belt
+  - lean six sigma
+  - haccp
+  - bpm
+recommendation_thresholds:
+  high_match: 85
+  good_match: 70
+  exploratory: 55
+  low_match: 40
+confidence:
+  sufficient_for_high_match: 60
+  minimum_review: 35
+coverage:
+  minimum_review: 35
+experience_bands:
+  high_min_ratio: 0.80
+  medium_min_ratio: 0.60
+  low_min_ratio: 0.40
+recency_days:
+  fresh: 3
+  week: 7
+  two_weeks: 14
+  month: 30
+  two_months: 60
+skill_levels:
+  Basico: 1
+  Intermedio: 2
+  Avanzado: 3
+  Experto: 4
+job_families:
+  Produccion:
+    - produccion
+    - planta
+    - manufactura
+  Operaciones:
+    - operaciones
+    - operativo
+  Procesos:
+    - procesos
+    - procesos industriales
+  Mejora continua:
+    - mejora continua
+    - excelencia operacional
+    - lean
+  Calidad:
+    - calidad
+    - iso
+  Logistica:
+    - logistica
+    - bodega
+    - inventarios
+  Planificacion:
+    - planificador
+    - planificacion
+  Supply chain:
+    - supply chain
+    - cadena de suministro
+  Mantenimiento:
+    - mantenimiento
+  Comercial:
+    - comercial
+    - ventas
+  Administracion:
+    - administracion
+    - administrativo
+sector_relations:
+  Manufactura:
+    - Madera
+    - Alimentos
+    - Consumo masivo
+gap_severity:
+  critical: Critica
+  important: Importante
+  moderate: Moderada
+  minor: Menor
+  unconfirmed: No confirmada

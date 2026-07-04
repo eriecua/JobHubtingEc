@@ -1,0 +1,36 @@
+supported_extensions:
+  - .txt
+  - .pdf
+  - .docx
+max_file_size_mb: 5
+minimum_extractable_characters: 20
+section_headings:
+  profile:
+    - perfil
+    - resumen
+    - resumen profesional
+    - perfil profesional
+  experience:
+    - experiencia
+    - experiencia laboral
+    - experiencia profesional
+  skill:
+    - habilidades
+    - competencias
+    - competencias tecnicas
+  tool:
+    - herramientas
+    - software
+    - herramientas digitales
+  education:
+    - educacion
+    - formacion
+    - formacion academica
+  certification:
+    - certificaciones
+    - cursos
+    - certificaciones y cursos
+  target_role:
+    - cargos objetivo
+    - roles objetivo
+    - intereses profesionales

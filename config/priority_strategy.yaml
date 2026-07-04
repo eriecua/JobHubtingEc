@@ -1,0 +1,161 @@
+prioritization_version: "phase5.0"
+priority_weights:
+  compatibility: 35
+  confidence: 10
+  urgency: 15
+  strategic_alignment: 15
+  growth_value: 10
+  salary_location_fit: 5
+  actionability: 5
+  application_effort: 5
+priority_thresholds:
+  critical: 90
+  high: 75
+  medium: 55
+  low: 35
+confidence_bands:
+  full: 85
+  high: 70
+  medium: 50
+  low: 30
+urgency:
+  publication_age:
+    0_3_days: 1.00
+    4_7_days: 0.90
+    8_14_days: 0.75
+    15_30_days: 0.50
+    31_60_days: 0.25
+    over_60_days: 0.10
+    unknown: 0.45
+  expiration:
+    0_2_days: 1.00
+    3_5_days: 0.90
+    6_10_days: 0.70
+    over_10_days: 0.50
+    unknown: 0.55
+  status_penalties:
+    Vencida: 0.00
+    Cerrada: 0.00
+    Eliminada logicamente: 0.00
+    Descartada: 0.10
+daily_mix:
+  direct_application: 0.60
+  growth: 0.20
+  review: 0.10
+  exploration: 0.10
+daily_inbox:
+  max_items: 10
+  max_direct_applications: 5
+  max_review_items: 2
+  max_growth_items: 2
+wip_limits:
+  prepare_application: 5
+  review: 10
+  ready_to_apply: 5
+stale_decisions:
+  new_without_review_days: 3
+  review_without_decision_days: 5
+  prepare_without_application_days: 7
+  saved_without_action_days: 14
+actions:
+  - Postular
+  - Preparar postulacion
+  - Revisar
+  - Explorar
+  - Guardar
+  - Esperar informacion
+  - Descartar
+  - Posponer
+priority_buckets:
+  - Critica
+  - Alta
+  - Media
+  - Baja
+  - Sin prioridad
+  - Requiere revision
+decision_sources:
+  - Usuario
+  - Regla inicial
+  - Migracion
+application_effort:
+  Bajo: 1.00
+  Medio: 0.65
+  Alto: 0.30
+  Desconocido: 0.50
+saved_view_filters:
+  - recommended_action
+  - priority_bucket
+  - is_stale
+  - min_priority
+  - profile_id
+saved_view_sort_fields:
+  - priority_score
+  - urgency_score
+  - created_at
+  - recommended_action
+  - priority_bucket
+decision_reasons:
+  postular:
+    - Alta compatibilidad
+    - Empresa objetivo
+    - Cargo objetivo
+    - Salario adecuado
+    - Ubicacion adecuada
+    - Publicacion reciente
+    - Oportunidad de crecimiento
+    - Requisitos principales cubiertos
+  revisar:
+    - Salario no informado
+    - Ubicacion no clara
+    - Requisito ambiguo
+    - Evaluacion con confianza baja
+    - Evaluacion obsoleta
+    - Posible duplicado
+    - Vacante sospechosa
+    - Informacion insuficiente
+  explorar:
+    - Cargo relacionado
+    - Sector nuevo
+    - Crecimiento profesional
+    - Habilidades transferibles
+    - Brechas deseables
+    - Oportunidad ligeramente superior
+  descartar:
+    - Restriccion obligatoria incumplida
+    - Salario insuficiente
+    - Ubicacion incompatible
+    - Jornada incompatible
+    - Cargo no relacionado
+    - Brechas criticas
+    - Vacante vencida
+    - Oferta sospechosa
+    - Empresa no deseada
+    - Postulacion cerrada
+    - Vacante duplicada
+application_statuses:
+  - Preparando
+  - Postulada
+  - Confirmacion recibida
+  - En revision
+  - Prueba tecnica
+  - Entrevista
+  - Segunda entrevista
+  - Oferta
+  - Rechazada
+  - Retirada
+  - Cerrada sin respuesta
+shortlist_statuses:
+  - Borrador
+  - Activa
+  - Completada
+  - Archivada
+shortlist_item_statuses:
+  - Pendiente
+  - En progreso
+  - Completada
+  - Omitida
+excluded_job_statuses:
+  - Eliminada logicamente
+  - Cerrada
+  - Vencida
+  - Descartada

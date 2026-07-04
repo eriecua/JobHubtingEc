@@ -1,0 +1,218 @@
+job_statuses:
+  - Nueva
+  - Activa
+  - Guardada
+  - Revisada
+  - Descartada
+  - Postulada
+  - Pausada
+  - Vencida
+  - Cerrada
+  - Eliminada logicamente
+review_statuses:
+  - Pendiente
+  - Revisada
+  - Requiere correccion
+  - Rechazada
+data_quality_statuses:
+  - Completa
+  - Parcial
+  - Minima
+  - Invalida
+modalities:
+  - Presencial
+  - Hibrida
+  - Remota
+  - No especificada
+employment_types:
+  - Tiempo completo
+  - Medio tiempo
+  - Temporal
+  - Pasantia
+  - Freelance
+  - Por proyecto
+  - No especificado
+salary_periods:
+  - Por hora
+  - Diario
+  - Semanal
+  - Quincenal
+  - Mensual
+  - Anual
+  - No especificado
+currencies:
+  - USD
+  - EUR
+  - Otra
+batch_statuses:
+  - Creado
+  - Validando
+  - En revision
+  - Procesando
+  - Completado
+  - Completado con errores
+  - Fallido
+  - Cancelado
+validation_statuses:
+  - Valida
+  - Valida con advertencias
+  - Invalida
+  - Pendiente
+duplicate_statuses:
+  - No duplicada
+  - Duplicado exacto
+  - Posible duplicado
+  - Actualizacion potencial
+  - Pendiente de revision
+user_decisions:
+  - Importar
+  - Omitir
+  - Importar como nueva
+  - Actualizar existente
+  - Completar campos vacios
+  - Corregir
+  - Rechazar
+error_severities:
+  - Informacion
+  - Advertencia
+  - Error
+  - Critico
+status_sources:
+  - Usuario
+  - Importacion
+  - Sistema
+  - Migracion
+column_aliases:
+  title:
+    - cargo
+    - puesto
+    - vacante
+    - job_title
+    - titulo
+  company:
+    - empresa
+    - organizacion
+    - organization
+    - employer
+  city:
+    - ciudad
+    - localidad
+    - location_city
+  province:
+    - provincia
+    - estado
+  source_url:
+    - url
+    - enlace
+    - link
+    - vacancy_url
+  publication_date:
+    - fecha
+    - fecha_publicacion
+    - publicado
+  description:
+    - detalle
+    - descripcion
+    - description_text
+  source:
+    - fuente
+    - origen
+    - portal
+    - bolsa
+  salary_min:
+    - sueldo
+    - salario
+    - salario_minimo
+job_title_aliases:
+  coordinador de produccion:
+    - coordinador produccion
+    - coordinador de producción
+    - production coordinator
+    - coordinador producción
+  supervisor de produccion:
+    - supervisor produccion
+    - supervisor de producción
+    - production supervisor
+    - supervisor de planta
+  analista de mejora continua:
+    - continuous improvement analyst
+    - analista mejora continua
+    - analista de excelencia operacional
+company_suffixes:
+  - s.a.
+  - s.a.s.
+  - cia. ltda.
+  - cia ltda
+  - ltda.
+  - inc.
+  - llc
+locations:
+  Ecuador:
+    Guayas:
+      - Guayaquil
+      - Duran
+      - Samborondon
+    Pichincha:
+      - Quito
+    Los Rios:
+      - Quevedo
+      - Babahoyo
+    Manabi:
+      - Manta
+      - Portoviejo
+    Azuay:
+      - Cuenca
+    El Oro:
+      - Machala
+    Santo Domingo de los Tsachilas:
+      - Santo Domingo
+location_aliases:
+  gye:
+    city: Guayaquil
+    province: Guayas
+  guayaquil:
+    city: Guayaquil
+    province: Guayas
+  uio:
+    city: Quito
+    province: Pichincha
+  quito:
+    city: Quito
+    province: Pichincha
+  quevedo, los rios:
+    city: Quevedo
+    province: Los Rios
+  sto. domingo:
+    city: Santo Domingo
+    province: Santo Domingo de los Tsachilas
+import_limits:
+  max_file_size_mb: 10
+  max_rows: 5000
+  preview_rows: 100
+file_policy:
+  keep_original: false
+  keep_hash_and_name: true
+duplicate_thresholds:
+  exact: 95
+  probable: 85
+  relevant: 70
+suspicious_patterns:
+  payment_requests:
+    severity: Alto
+    terms:
+      - pago de inscripcion
+      - deposito previo
+      - inversion inicial
+      - compra obligatoria
+      - informacion bancaria
+  unrealistic_income:
+    severity: Medio
+    terms:
+      - ingresos ilimitados
+      - gana miles sin experiencia
+      - dinero rapido
+  generic_company:
+    severity: Bajo
+    terms:
+      - confidencial
+      - empresa importante

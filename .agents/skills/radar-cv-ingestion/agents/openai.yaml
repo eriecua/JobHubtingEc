@@ -1,0 +1,4 @@
+interface:
+  display_name: "Radar CV Ingestion"
+  short_description: "Guia carga asistida de CV"
+  default_prompt: "Use $radar-cv-ingestion to design a safe assisted CV-to-profile workflow for Radar Laboral."

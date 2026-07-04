@@ -1,0 +1,132 @@
+learning_version: "phase6.1"
+signal_value_limits:
+  minimum: -2.0
+  maximum: 2.0
+feedback_signal_weights:
+  implicit:
+    viewed_detail: 0.05
+    opened_source: 0.10
+    added_to_daily_list: 0.15
+    revisited: 0.10
+  explicit:
+    saved: 0.20
+    explored: 0.25
+    prepared_application: 0.45
+    applied: 0.60
+    discarded: -0.35
+  outcomes:
+    employer_response: 0.75
+    interview: 1.00
+    second_interview: 1.20
+    technical_test: 1.00
+    offer: 1.50
+    accepted_offer: 2.00
+    employer_rejection: -0.25
+    no_response: -0.10
+    user_withdrawal: -0.15
+  corrections:
+    changed_recommendation: 0.35
+    corrected_priority: 0.30
+    rated_recommendation: 0.20
+  preferences:
+    marked_target_company: 0.40
+    marked_interesting_role: 0.35
+event_categories:
+  - Implicita
+  - Explicita
+  - Resultado
+  - Correccion
+  - Preferencia
+event_sources:
+  - Usuario
+  - Interfaz
+  - Importacion historica
+  - Migracion
+  - Sistema
+application_outcome_types:
+  - Sin respuesta
+  - Respuesta automatica
+  - Contacto de reclutador
+  - Rechazo
+  - Prueba tecnica
+  - Entrevista
+  - Segunda entrevista
+  - Entrevista final
+  - Oferta
+  - Oferta aceptada
+  - Oferta rechazada
+  - Postulacion retirada
+  - Proceso cancelado
+learning_statuses:
+  - Creado
+  - Analizando
+  - Completado
+  - Completado con observaciones
+  - Fallido
+  - Cancelado
+metric_scopes:
+  - General
+  - Cargo
+  - Sector
+  - Ciudad
+  - Fuente
+  - Empresa
+  - Habilidad
+  - Recomendacion
+  - Rango de prioridad
+  - Rango de compatibilidad
+proposal_types:
+  - Ajustar peso de prioridad
+  - Ajustar preferencia
+  - Anadir cargo objetivo
+  - Cambiar prioridad de cargo
+  - Anadir sector objetivo
+  - Cambiar prioridad de sector
+  - Anadir alias
+  - Anadir regla de exclusion
+  - Eliminar regla de exclusion
+  - Ajustar mezcla de exploracion
+  - Destacar brecha frecuente
+  - Recomendar revisar perfil
+  - Recomendar actualizar evidencia
+proposal_statuses:
+  - Pendiente
+  - Aprobada
+  - Rechazada
+  - Aplicada
+  - Revertida
+  - Pospuesta
+  - Expirada
+risk_levels:
+  - Bajo
+  - Medio
+  - Alto
+learning_thresholds:
+  minimum_events_for_pattern: 5
+  minimum_applications_for_rate: 5
+  minimum_outcomes_for_adjustment: 3
+  minimum_interviews_for_strong_signal: 2
+  minimum_offers_for_strong_signal: 1
+  maximum_adjustment_per_run_percent: 10
+  proposal_expiration_days: 30
+feedback_recency:
+  0_30_days: 1.00
+  31_90_days: 0.80
+  91_180_days: 0.60
+  over_180_days: 0.40
+priority_ranges:
+  - label: "90-100"
+    minimum: 90
+    maximum: 100
+  - label: "80-89"
+    minimum: 80
+    maximum: 89.999
+  - label: "70-79"
+    minimum: 70
+    maximum: 79.999
+  - label: "60-69"
+    minimum: 60
+    maximum: 69.999
+  - label: "Menor de 60"
+    minimum: 0
+    maximum: 59.999

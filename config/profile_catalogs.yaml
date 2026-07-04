@@ -1,0 +1,109 @@
+skill_categories:
+  - Tecnica
+  - Analitica
+  - Gestion
+  - Digital
+  - Operativa
+  - Calidad
+  - Logistica
+  - Mejora continua
+  - Comunicacion
+  - Liderazgo
+  - Idioma
+  - Otra
+skill_levels:
+  - Basico
+  - Intermedio
+  - Avanzado
+  - Experto
+interest_levels:
+  - Bajo
+  - Medio
+  - Alto
+evidence_types:
+  - Proyecto
+  - Responsabilidad laboral
+  - Logro
+  - Certificacion
+  - Curso
+  - Herramienta desarrollada
+  - Indicador
+  - Presentacion
+  - Documento
+  - Otro
+tool_categories:
+  - Ofimatica
+  - ERP
+  - BI
+  - Programacion
+  - Estadistica
+  - Gestion de proyectos
+  - Diseno
+  - Produccion
+  - Otro
+professional_levels:
+  - Pasantia
+  - Asistente
+  - Analista
+  - Especialista
+  - Supervisor
+  - Coordinador
+  - Jefatura
+  - Gerencia
+priorities:
+  - Principal
+  - Secundaria
+  - Exploratoria
+education_statuses:
+  - En curso
+  - Completado
+  - Suspendido
+  - Incompleto
+goal_statuses:
+  - Pendiente
+  - En progreso
+  - Completado
+  - Pausado
+  - Descartado
+constraint_types:
+  - Salario minimo obligatorio
+  - Ciudad excluida
+  - Provincia excluida
+  - Modalidad excluida
+  - Jornada excluida
+  - Sector excluido
+  - Tipo de contrato excluido
+  - Disponibilidad para viajar
+  - Disponibilidad para reubicarse
+  - Otro
+constraint_operators:
+  - Igual
+  - Diferente
+  - Mayor o igual
+  - Menor o igual
+  - Contiene
+  - No contiene
+skill_aliases:
+  excel:
+    - microsoft excel
+    - ms excel
+    - excel avanzado
+  mejora continua:
+    - continuous improvement
+    - mejoramiento continuo
+  six sigma:
+    - six sigma yellow belt
+    - lean six sigma
+  analisis de datos:
+    - data analysis
+    - analitica de datos
+tool_aliases:
+  microsoft excel:
+    - excel
+    - ms excel
+  dynamics 365:
+    - microsoft dynamics 365
+    - dynamics
+  google sheets:
+    - sheets
+    - hojas de calculo de google

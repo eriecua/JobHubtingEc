@@ -1,0 +1,9 @@
+streamlit>=1.37
+SQLAlchemy>=2.0
+pydantic>=2.8
+PyYAML>=6.0
+pandas>=2.2
+pytest>=8.2
+alembic>=1.13
+pypdf>=4.3
+python-docx>=1.1
